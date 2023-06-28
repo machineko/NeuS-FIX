@@ -19,7 +19,7 @@ from models.renderer import NeuSRenderer
 
 class Runner:
     def __init__(self, conf_path, mode='train', case='CASE_NAME', is_continue=False):
-        self.device = torch.device('cuda')
+        self.device = torch.device('mps')
 
         # Configuration
         self.conf_path = conf_path
